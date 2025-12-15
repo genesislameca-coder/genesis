@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Roca del Inicio - Sector Nuevo Testamento</title>
+  <title>Roca del Inicio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link
@@ -11,33 +11,57 @@
   />
 
   <style>
-    body { font-family: sans-serif; margin: 0; padding: 10px; }
-    #map { height: 50vh; margin-bottom: 20px; }
-    .boulder-list p { margin: 5px 0; }
+    body { margin: 0; font-family: sans-serif; }
+    #map { height: 60vh; } /* espacio para el mapa */
+    .boulder-list { padding: 10px; }
   </style>
 </head>
 <body>
 
-  <a href="sector-nuevo-testamento.html">← Volver al sector</a>
+  <a href="sector-nuevo-testamento.html">← Volver al Sector</a>
 
   <h1>Roca del Inicio</h1>
   <p>
-    <b>Descripción:</b> Roca cerca del inicio del sector, con sombra parcial.<br>
-    <b>Número de boulders:</b> 15
+    <b>Aproximación:</b> 15 min<br>
+    <b>Sombra:</b> Parcial (mañana)<br>
+    <b>Número de boulders:</b> 14
   </p>
 
   <div id="map"></div>
 
   <div class="boulder-list">
     <h2>Boulders</h2>
-    <p><b>1 Génesis I</b> — V1<br><a href="genesis-i.html">Ver boulder →</a></p>
-    <p><b>1.1 Génesis Sit Start</b> — V3<br><a href="genesis-sit-start.html">Ver boulder →</a></p>
-    <p><b>2 Éxodo</b> — V1<br><a href="exodo.html">Ver boulder →</a></p>
-    <p><b>3 Sigue Respirando</b> — V2<br><a href="sigue-respirando.html">Ver boulder →</a></p>
-    <p><b>3.1 Sigue Respirando Sit Start</b> — V1<br><a href="sigue-respirando-sit-start.html">Ver boulder →</a></p>
-    <p><b>4 Eva</b> — V5<br><a href="eva.html">Ver boulder →</a></p>
-    <p><b>5 Adán</b> — V3<br><a href="adan.html">Ver boulder →</a></p>
-    <p><b>6 Rezo por vos</b> — V5<br><a href="rezo-por-vos.html">Ver boulder →</a></p>
-    <p><b>7 La Manzana de la discordia</b> — V3<br><a href="la-manzana-de-la-discordia.html">Ver boulder →</a></p>
-    <p><b>8 El Escorpión Rojo</b> — V3+<br><a href="el-escorpion-rojo.html">Ver boulder →</a></p>
-    <p><b>9 El Escorpión Negro</b> — V3<br><a href="el-escorpion-n
+    <ul>
+      <li><a href="genesis-i.html">Génesis I — V1</a></li>
+      <li><a href="genesis-sit-start.html">Génesis Sit Start — V3</a></li>
+      <li><a href="sigue-respirando.html">Sigue Respirando — V2</a></li>
+      <li><a href="sigue-respirando-sit-start.html">Sigue Respirando Sit Start — V1</a></li>
+      <li><a href="eva.html">Eva — V5</a></li>
+      <li><a href="adan.html">Adán — V3</a></li>
+      <li><a href="rezo-por-vos.html">Rezo por Vos — V5</a></li>
+      <li><a href="la-manzana.html">La Manzana de la Discordia — V3</a></li>
+      <li><a href="el-escorpion-rojo.html">El Escorpión Rojo — V3+</a></li>
+      <li><a href="el-escorpion-negro.html">El Escorpión Negro — V3</a></li>
+      <li><a href="la-caida-del-hombre.html">La Caída del Hombre — V4</a></li>
+      <li><a href="la-pringuita.html">La Pringuita — V4</a></li>
+      <li><a href="el-diluvio.html">El Diluvio — V8</a></li>
+      <li><a href="no-me-dejes-caer-en-la-tentacion.html">No me dejes caer en la tentación — V6</a></li>
+    </ul>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    var map = L.map('map').setView([17.045352, -96.654364], 17);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Marker de la roca
+    L.marker([17.045352, -96.654364])
+      .addTo(map)
+      .bindPopup("<b>Roca del Inicio</b><br>14 boulders<br><a href='roca-del-inicio.html'>Ver boulders</a>");
+  </script>
+
+</body>
+</html>
