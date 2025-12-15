@@ -37,7 +37,13 @@
 
   <div class="list">
     <h2>Problems</h2>
-    <!-- PROBLEM LIST GOES HERE -->
+
+    <div class="problem">
+  <b>La Regleta</b> — V4<br>
+  Sit start · crimps<br>
+  <a href="problem1.html">View →</a>
+</div>
+
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -63,6 +69,15 @@ var v0v2 = gradeIcon('green');
 var v3v4 = gradeIcon('blue');
 var v5v6 = gradeIcon('orange');
 var v7up = gradeIcon('red');
+
+L.marker([17.044900, -96.653600], { icon: v3v4 })
+  .addTo(map)
+  .bindPopup(`
+    <b>La Regleta</b><br>
+    V4<br>
+    Sit start · crimps<br>
+    <a href="regleta-v4.html">Open problem</a>
+  `);
 
   </script>
 </body>
