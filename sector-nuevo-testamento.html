@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
   <title>Sector Nuevo Testamento</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,78 +12,47 @@
 
   <style>
     body { margin: 0; font-family: sans-serif; }
-    header {
-      padding: 10px;
-      background: #f5f5f5;
-    }
-    #map { height: 60vh; }
-    .list {
-      padding: 10px;
-    }
-    .problem {
-      margin-bottom: 12px;
-    }
+    #map { height: 60vh; } /* smaller map to leave room for list below */
+    .rock-list { padding: 10px; }
   </style>
 </head>
-
 <body>
-  <header>
-    <a href="index.html">← volver al mapa</a>
-<h1>Sector Nuevo Testamento</h1>
 
-<p>
-  <b>Aproximación:</b> 15 min<br>
-  <b>Sombra:</b> Parcial (mañana)<br>
-  <b>Número de bloques:</b> 14
-</p>
-  </header>
+  <a href="index.html">← Volver al mapa principal</a>
+
+  <h1>Sector Nuevo Testamento</h1>
+  <p>
+    <b>Aproximación:</b> 15 min<br>
+    <b>Sombra:</b> Parcial (mañana)<br>
+    <b>Número de rocas:</b> 2
+  </p>
 
   <div id="map"></div>
 
-  <div class="list">
-    <h2>Boulders</h2>
-
-    <div class="problem">
-  <b>Sigue Respirando</b> — V2<br>
-  Highball<br>
-  <a href="problem1.html">Abrir →</a>
-</div>
-
+  <div class="rock-list">
+    <h2>Rocas</h2>
+    <p><b>Roca de la Creacion</b> — 9 boulders<br><a href="rock1.html">Ver boulders →</a></p>
+    <p><b>Roca del Inicio</b> — 4 boulders<br><a href="rock2.html">Ver boulders →</a></p>
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script>
-    var map = L.map('map').setView([17.044800, -96.653800], 18);
+    var map = L.map('map').setView([17.044622, -96.653280], 17);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '© OpenStreetMap contributors'
     }).addTo(map);
 
-function gradeIcon(color) {
-  return new L.Icon({
-    iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-${color}.png`,
-    shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
-    iconSize: [25, 41],
-    iconAnchor: [12, 41],
-    popupAnchor: [1, -34],
-    shadowSize: [41, 41]
-  });
-}
+    // Rock 1 marker
+    L.marker([17.044622, -96.653280])
+      .addTo(map)
+      .bindPopup("<b>Roca de la Creacion</b><br>9 boulders<br><a href='rock1.html'>Ver boulders</a>");
 
-var v0v2 = gradeIcon('green');
-var v3v4 = gradeIcon('blue');
-var v5v6 = gradeIcon('orange');
-var v7up = gradeIcon('red');
-
-L.marker([17.044900, -96.653600], { icon: v3v4 })
-  .addTo(map)
-  .bindPopup(`
-    <b>Sigue Respirando</b><br>
-    V2<br>
-    Highball <br>
-    <a href="problem1.html">Abrir</a>
-  `);
-
+    // Rock 2 marker
+    L.marker([17.045352, -96.654364])
+      .addTo(map)
+      .bindPopup("<b>Roca del Inicio</b><br>14 bloques<br><a href='rock2.html'>Ver boulders</a>");
   </script>
+
 </body>
 </html>
