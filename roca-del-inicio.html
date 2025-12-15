@@ -30,21 +30,21 @@
 
   <div class="boulder-list">
     <h2>Boulders</h2>
-    <p><b>1 Génesis I</b> — V1<br><a href="problem1.html">Ver boulder →</a></p>
-    <p><b>1.1 Génesis Sit Start</b> — V3<br><a href="problem2.html">Ver boulder →</a></p>
-    <p><b>2 Éxodo</b> — V1<br><a href="problem3.html">Ver boulder →</a></p>
-    <p><b>3 Sigue Respirando</b> — V2<br><a href="problem4.html">Ver boulder →</a></p>
-    <p><b>3.1 Sigue Respirando Sit Start</b> — V1<br><a href="problem5.html">Ver boulder →</a></p>
-    <p><b>4 Eva</b> — V5<br><a href="problem6.html">Ver boulder →</a></p>
-    <p><b>5 Adán</b> — V3<br><a href="problem7.html">Ver boulder →</a></p>
-    <p><b>6 Rezo por vos</b> — V5<br><a href="problem8.html">Ver boulder →</a></p>
-    <p><b>7 La Manzana de la discordia</b> — V3<br><a href="problem9.html">Ver boulder →</a></p>
-    <p><b>8 El Escorpión Rojo</b> — V3+<br><a href="problem10.html">Ver boulder →</a></p>
-    <p><b>9 El Escorpión Negro</b> — V3<br><a href="problem11.html">Ver boulder →</a></p>
-    <p><b>10 La Caída del Hombre</b> — V4<br><a href="problem12.html">Ver boulder →</a></p>
-    <p><b>11 La Pringuita</b> — V4<br><a href="problem13.html">Ver boulder →</a></p>
-    <p><b>12 El Diluvio</b> — V8<br><a href="problem14.html">Ver boulder →</a></p>
-    <p><b>13 No me dejes caer en la tentación</b> — V6<br><a href="problem15.html">Ver boulder →</a></p>
+    <p><b>1 Génesis I</b> — V1<br><a href="genesis-i.html">Ver boulder →</a></p>
+    <p><b>1.1 Génesis Sit Start</b> — V3<br><a href="genesis-sit-start.html">Ver boulder →</a></p>
+    <p><b>2 Éxodo</b> — V1<br><a href="exodo.html">Ver boulder →</a></p>
+    <p><b>3 Sigue Respirando</b> — V2<br><a href="sigue-respirando.html">Ver boulder →</a></p>
+    <p><b>3.1 Sigue Respirando Sit Start</b> — V1<br><a href="sigue-respirando-sit-start.html">Ver boulder →</a></p>
+    <p><b>4 Eva</b> — V5<br><a href="eva.html">Ver boulder →</a></p>
+    <p><b>5 Adán</b> — V3<br><a href="adan.html">Ver boulder →</a></p>
+    <p><b>6 Rezo por vos</b> — V5<br><a href="rezo-por-vos.html">Ver boulder →</a></p>
+    <p><b>7 La Manzana de la discordia</b> — V3<br><a href="la-manzana-de-la-discordia.html">Ver boulder →</a></p>
+    <p><b>8 El Escorpión Rojo</b> — V3+<br><a href="el-escorpion-rojo.html">Ver boulder →</a></p>
+    <p><b>9 El Escorpión Negro</b> — V3<br><a href="el-escorpion-negro.html">Ver boulder →</a></p>
+    <p><b>10 La Caída del Hombre</b> — V4<br><a href="la-caida-del-hombre.html">Ver boulder →</a></p>
+    <p><b>11 La Pringuita</b> — V4<br><a href="la-pringuita.html">Ver boulder →</a></p>
+    <p><b>12 El Diluvio</b> — V8<br><a href="el-diluvio.html">Ver boulder →</a></p>
+    <p><b>13 No me dejes caer en la tentación</b> — V6<br><a href="no-me-dejes-caer-en-la-tentacion.html">Ver boulder →</a></p>
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -55,23 +55,14 @@
       attribution: '© OpenStreetMap contributors'
     }).addTo(map);
 
-    // Markers del mapa (coordenadas aproximadas)
-    L.marker([17.044622, -96.653280]).addTo(map).bindPopup("<b>1 Génesis I</b> — V1<br><a href='problem1.html'>Ver boulder</a>");
-    L.marker([17.044630, -96.653290]).addTo(map).bindPopup("<b>1.1 Génesis Sit Start</b> — V3<br><a href='problem2.html'>Ver boulder</a>");
-    L.marker([17.044640, -96.653300]).addTo(map).bindPopup("<b>2 Éxodo</b> — V1<br><a href='problem3.html'>Ver boulder</a>");
-    L.marker([17.044650, -96.653310]).addTo(map).bindPopup("<b>3 Sigue Respirando</b> — V2<br><a href='problem4.html'>Ver boulder</a>");
-    L.marker([17.044660, -96.653320]).addTo(map).bindPopup("<b>3.1 Sigue Respirando Sit Start</b> — V1<br><a href='problem5.html'>Ver boulder</a>");
-    L.marker([17.044670, -96.653330]).addTo(map).bindPopup("<b>4 Eva</b> — V5<br><a href='problem6.html'>Ver boulder</a>");
-    L.marker([17.044680, -96.653340]).addTo(map).bindPopup("<b>5 Adán</b> — V3<br><a href='problem7.html'>Ver boulder</a>");
-    L.marker([17.044690, -96.653350]).addTo(map).bindPopup("<b>6 Rezo por vos</b> — V5<br><a href='problem8.html'>Ver boulder</a>");
-    L.marker([17.044700, -96.653360]).addTo(map).bindPopup("<b>7 La Manzana de la discordia</b> — V3<br><a href='problem9.html'>Ver boulder</a>");
-    L.marker([17.044710, -96.653370]).addTo(map).bindPopup("<b>8 El Escorpión Rojo</b> — V3+<br><a href='problem10.html'>Ver boulder</a>");
-    L.marker([17.044720, -96.653380]).addTo(map).bindPopup("<b>9 El Escorpión Negro</b> — V3<br><a href='problem11.html'>Ver boulder</a>");
-    L.marker([17.044730, -96.653390]).addTo(map).bindPopup("<b>10 La Caída del Hombre</b> — V4<br><a href='problem12.html'>Ver boulder</a>");
-    L.marker([17.044740, -96.653400]).addTo(map).bindPopup("<b>11 La Pringuita</b> — V4<br><a href='problem13.html'>Ver boulder</a>");
-    L.marker([17.044750, -96.653410]).addTo(map).bindPopup("<b>12 El Diluvio</b> — V8<br><a href='problem14.html'>Ver boulder</a>");
-    L.marker([17.044760, -96.653420]).addTo(map).bindPopup("<b>13 No me dejes caer en la tentación</b> — V6<br><a href='problem15.html'>Ver boulder</a>");
-  </script>
-
-</body>
-</html>
+    // Markers
+    L.marker([17.044622, -96.653280]).addTo(map).bindPopup("<b>1 Génesis I</b> — V1<br><a href='genesis-i.html'>Ver boulder</a>");
+    L.marker([17.044630, -96.653290]).addTo(map).bindPopup("<b>1.1 Génesis Sit Start</b> — V3<br><a href='genesis-sit-start.html'>Ver boulder</a>");
+    L.marker([17.044640, -96.653300]).addTo(map).bindPopup("<b>2 Éxodo</b> — V1<br><a href='exodo.html'>Ver boulder</a>");
+    L.marker([17.044650, -96.653310]).addTo(map).bindPopup("<b>3 Sigue Respirando</b> — V2<br><a href='sigue-respirando.html'>Ver boulder</a>");
+    L.marker([17.044660, -96.653320]).addTo(map).bindPopup("<b>3.1 Sigue Respirando Sit Start</b> — V1<br><a href='sigue-respirando-sit-start.html'>Ver boulder</a>");
+    L.marker([17.044670, -96.653330]).addTo(map).bindPopup("<b>4 Eva</b> — V5<br><a href='eva.html'>Ver boulder</a>");
+    L.marker([17.044680, -96.653340]).addTo(map).bindPopup("<b>5 Adán</b> — V3<br><a href='adan.html'>Ver boulder</a>");
+    L.marker([17.044690, -96.653350]).addTo(map).bindPopup("<b>6 Rezo por vos</b> — V5<br><a href='rezo-por-vos.html'>Ver boulder</a>");
+    L.marker([17.044700, -96.653360]).addTo(map).bindPopup("<b>7 La Manzana de la discordia</b> — V3<br><a href='la-manzana-de-la-discordia.html'>Ver boulder</a>");
+    L.mark
