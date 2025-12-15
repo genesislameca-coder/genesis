@@ -23,39 +23,18 @@
   <h1>Roca de la Creación</h1>
   <p>
     <b>Descripción:</b> Roca cerca del inicio del sector, con sombra parcial.<br>
-    <b>Número de bloques:</b> 3
+    <b>Número de boulders:</b> 3
   </p>
 
   <div id="map"></div>
 
   <div class="boulder-list">
-    <h2>Bloques</h2>
-    <p><b>Sigue Respirando</b> — V3<br><a href="problem1.html">Ver bloque →</a></p>
-    <p><b>Otro Bloque</b> — V4<br><a href="problem2.html">Ver bloque →</a></p>
-    <p><b>Tercer Bloque</b> — V5<br><a href="problem3.html">Ver bloque →</a></p>
+    <h2>Boulders</h2>
+    <p><b>Sigue Respirando</b> — V3<br><a href="problem1.html">Ver boulder →</a></p>
+    <p><b>Otro Boulder</b> — V4<br><a href="problem2.html">Ver boulder →</a></p>
+    <p><b>Tercer Boulder</b> — V5<br><a href="problem3.html">Ver boulder →</a></p>
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script>
-    var map = L.map('map').setView([17.044622, -96.653280], 18);
-
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '© OpenStreetMap contributors'
-    }).addTo(map);
-
-    // Boulder markers
-    L.marker([17.044622, -96.653280])
-      .addTo(map)
-      .bindPopup("<b>Sigue Respirando</b><br>V3<br><a href='problem1.html'>Ver bloque</a>");
-
-    L.marker([17.044700, -96.653500])
-      .addTo(map)
-      .bindPopup("<b>Otro Bloque</b><br>V4<br><a href='problem2.html'>Ver bloque</a>");
-
-    L.marker([17.044850, -96.653650])
-      .addTo(map)
-      .bindPopup("<b>Tercer Bloque</b><br>V5<br><a href='problem3.html'>Ver bloque</a>");
-  </script>
-
-</body>
-</html>
+    var map = L.map('map').setView([1]()
