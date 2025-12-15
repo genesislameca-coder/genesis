@@ -73,10 +73,10 @@ var v7up = gradeIcon('red');
 L.marker([17.044900, -96.653600], { icon: v3v4 })
   .addTo(map)
   .bindPopup(`
-    <b>La Regleta</b><br>
-    V4<br>
-    Sit start · crimps<br>
-    <a href="regleta-v4.html">Open problem</a>
+    <b>Sigue Respirando</b><br>
+    V2<br>
+    Highball <br>
+    <a href="problem1.html">Open problem</a>
   `);
 
   </script>
