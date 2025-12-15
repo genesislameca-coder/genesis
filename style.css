@@ -1,0 +1,75 @@
+/* style.css - Nature / Green Palette */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Open+Sans&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #edf7ed;
+  color: #2d4739;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #1b3d2b;
+  text-align: center;
+}
+
+#map {
+  height: 60vh;
+  border: 2px solid #1b3d2b;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 15px;
+}
+
+a.back-link {
+  display: inline-block;
+  margin: 10px 15px;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #27ae60;
+  border-radius: 5px;
+  font-weight: bold;
+}
+a.back-link:hover {
+  background-color: #16a085;
+}
+
+.boulder-list, .rock-list {
+  padding: 15px;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #e6f0e6;
+  border-top: 3px solid #1b3d2b;
+  border-radius: 10px;
+}
+
+.boulder-list li, .rock-list li {
+  list-style: none;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #d6ead6;
+  border-radius: 8px;
+}
+
+.boulder-list li:hover, .rock-list li:hover {
+  background-color: #bde6bd;
+}
+
+.boulder-list a, .rock-list a {
+  color: #1b3d2b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.boulder-list a:hover, .rock-list a:hover {
+  color: #16a085;
+}
+
+p {
+  line-height: 1.5;
+  margin: 10px 0;
+}
